@@ -10,8 +10,8 @@
     - apigee-tls-ui
     - apigee-tls-mp
     - apigee-organization
-    - apigee-dev-portal
-    - apigee-validate
+#    - apigee-dev-portal
+#    - apigee-validate
   vars:
     apigee_topology:
       - dc-1 host01 ms
@@ -37,7 +37,7 @@
 
     # Set this to false to retain installation files in the temporary directory
     # (default: /tmp/apigee).
-    apigee_clean_up: true
+    apigee_clean_up: false
 
     # apigee-base
     apigee_installation_path: /opt
@@ -50,8 +50,8 @@
     #apigee_repository_username: admin
     #apigee_repository_password: admin
     # Tarball stored on the filesystem
-    #apigee_repository_protocol: file://
-    #apigee_repository_base_path: /path/to/repos
+    apigee_repository_protocol: file://
+    apigee_repository_base_path: /path/to/repos
 
     # apigee-edge
     apigee_admin_email: opdk@apigee.com

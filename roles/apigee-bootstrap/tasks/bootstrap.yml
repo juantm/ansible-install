@@ -20,6 +20,11 @@
 
 
 - block:
+  - name: Copiar repositorio hacia los nodos.
+    copy:
+      src: /donde/esta/el/repo
+      dest: /donde/va/el/repo
+      file_type: directory
 
   - name: Set bootstrap path
     set_fact:
